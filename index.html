@@ -3,72 +3,72 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>iliya jozi</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Register</title>
   <style>
-    :root{
-      --bg:#111;
-      --title:#ffffff;
-      --text:#d1d5db;
-      --rule:#2d2d2d;
-      --max:700px;
+    body {
+      font-family: Arial;
+      background: #e9eef3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--text);
-      font-family:"Poppins", sans-serif;
-      line-height:1.6;
+    .box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 280px;
     }
-    .wrap{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:30px 20px 60px;
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #333;
     }
-    .section{
-      padding:28px 0 34px;
+    label {
+      display: block;
+      margin: 8px 0 4px;
+      font-size: 14px;
+      color: #444;
     }
-    .section + .section{
-      border-top:1px solid var(--rule);
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
     }
-    h1{
-      margin:0 0 10px 0;
-      font-size:clamp(22px, 5vw, 28px);
-      font-weight:700;
-      color:var(--title);
+    button {
+      width: 100%;
+      padding: 10px;
+      border: 0;
+      border-radius: 4px;
+      background: #0077cc;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
     }
-    p{
-      margin:0;
-      font-size:clamp(15px, 3.5vw, 18px);
-    }
-    @media (min-width:900px){
-      .wrap{padding:40px 32px 80px}
-      .section{padding:34px 0 46px}
+    button:hover {
+      background: #005fa3;
     }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <section class="section">
-      <h1>Title</h1>
-      <p>this is an update from my site i hope you enjoy it</p>
-    </section>
+  <div class="box">
+    <h2>Register</h2>
+    <form>
+      <label>Email</label>
+      <input type="email" required>
 
-    <section class="section">
-      <h1>Title</h1>
-      <p>this is an update from my site i hope you enjoy it</p>
-    </section>
+      <label>Password</label>
+      <input type="password" required>
 
-    <section class="section">
-      <h1>Title</h1>
-      <p>this is an update from my site i hope you enjoy it</p>
-    </section>
+      <label>Confirm Password</label>
+      <input type="password" required>
 
-    <section class="section">
-      <h1>Title</h1>
-      <p>this is an update from my site i hope you enjoy it</p>
-    </section>
-  </main>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
 </body>
 </html>
