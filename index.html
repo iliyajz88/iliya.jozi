@@ -8,37 +8,41 @@
   <style>
     body {
       font-family: 'Roboto', Arial, sans-serif;
-      background: #e9eef3;
+      background: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      margin: 0;
+      margin:auto 0;
     }
     .box {
-      background: #fff;
+      background: #ffffff;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      width: 280px;
+      border-radius: 12px;
+      box-shadow:  0 8px 16px rgba(0,0,0,0.1);
+      width: 290px;
     }
     h2 {
       text-align: center;
       margin-bottom: 15px;
-      color: #333;
+      color: #232222;
       font-weight: 500;
+      h1 {
+color: white;
+text-shadow: 0 0 15px rgba(186, 182, 182, 0.8);
+}
     }
     label {
       display: block;
       margin: 8px 0 4px;
       font-size: 14px;
-      color: #444;
+      color: #0c0b0b;
     }
     input {
       width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      padding: 7px;
+      border: 1px solid #efdcdc;
+      border-radius: 6px;
       margin-bottom: 10px;
       font-family: 'Roboto', Arial, sans-serif;
     }
@@ -46,16 +50,16 @@
       width: 100%;
       padding: 10px;
       border: 0;
-      border-radius: 4px;
-      background: #0077cc;
-      color: #fff;
+      border-radius: 5px;
+      background: #8ab1da;
+      color: #252424;
       font-size: 15px;
       cursor: pointer;
       font-family: 'Roboto', Arial, sans-serif;
-      font-weight: 500;
+      font-weight: 550;
     }
     button:hover {
-      background: #005fa3;
+      background: #b5b9ba;
     }
   </style>
 </head>
@@ -63,20 +67,15 @@
   <div class="box">
     <h2>Register</h2>
     <form>
-      <label>Name</label>
+      <label>Email &  Number</label>
       <input type="text" required>
 
-      <label>Email</label>
-      <input type="email" required>
 
       <label>Password</label>
       <input type="password" required>
 
-      <label>Confirm Password</label>
-      <input type="password" required>
-
-      <button type="submit">Sign Up</button>
+      <button type="submit">continue</button>
     </form>
   </div>
 </body>
-</html>
+</html
